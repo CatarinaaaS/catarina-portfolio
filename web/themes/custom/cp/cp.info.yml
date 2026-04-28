@@ -1,0 +1,38 @@
+name: cp
+description: "cp theme based on <a href='https://www.drupal.org/project/radix' target='_blank'>Radix 6.x</a> and Bootstrap 5.x"
+screenshot: screenshot.png
+'alt text': 'cp theme screenshot'
+core_version_requirement: ^11
+engine: twig
+type: theme
+'base theme': radix
+starterkit: true
+'interface translation project': cp
+'interface translation server pattern': themes/custom/cp/translations/%language.po
+regions:
+  navbar_branding: 'Navbar branding'
+  navbar_left: 'Navbar left'
+  navbar_right: 'Navbar right'
+  header: Header
+  content: Content
+  page_bottom: 'Page bottom'
+  footer: Footer
+libraries:
+  - cp/style
+ckeditor5-stylesheets:
+  - build/css/main.style.css
+libraries-extend:
+  core/drupal.ajax:
+    - cp/drupal.ajax
+  core/drupal.checkbox:
+    - cp/drupal.checkbox
+  core/drupal.message:
+    - cp/drupal.message
+  core/drupal.progress:
+    - cp/drupal.progress
+  clientside_validation_jquery/cv.jquery.validate:
+    - cp/jquery.validate
+version: 6.0.2
+project: radix
+datestamp: 1746711574
+generator: 'radix_starterkit:6.0.2'

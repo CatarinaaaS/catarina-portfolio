@@ -1,0 +1,5 @@
+# Schema for the configuration files of the cp theme.
+
+cp.settings:
+  type: theme_settings
+  label: 'cp settings'

@@ -1,0 +1,5 @@
+404: Not Foundvendor/
+node_modules/
+.ddev/
+.DS_Store
+web/sites/default/files/
