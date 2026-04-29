@@ -3,3 +3,5 @@ node_modules/
 .ddev/
 .DS_Store
 web/sites/default/files/
+web/themes/custom/cp/node_modules/
+web/themes/custom/cp/build/
