@@ -1,11 +1,14 @@
-// Bootstrap
-// -----------------------------------------------------------------------------
-@import 'init';
-@import 'bootstrap';
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Elms+Sans:ital,wght@0,100..900;1,100..900&family=Momo+Signature&family=Story+Script&display=swap");
 
-// Include any custom stylesheets here
-// -----------------------------------------------------------------------------
+@import "init";
+@import "bootstrap";
+
+@import "base/colors";
+
+@import "base/spaces";
+@import "base/typography";
+@import "base/variables";
 @import "base/elements";
 @import "base/functions";
 @import "base/helpers";
-@import "base/typography";
