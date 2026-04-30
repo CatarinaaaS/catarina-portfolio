@@ -1,0 +1,28 @@
+@import "../../src/scss/init";
+
+.cp-heading {
+    width: 100%;
+    padding: 4rem 0;
+
+    &__container {
+        margin: 0 auto;
+        padding: 0 20px;
+        text-align: center;
+        justify-items: center;
+    }
+
+    &__subtitle {
+        @extend .cp-subtitle;
+        @extend .cp-subtitle--xl;
+
+        color: $color-secondary;
+        margin-bottom: $space-xxl;
+    }
+
+    &__title {
+        @extend h1;
+
+        color: $color-primary;
+        margin-bottom: $space-md;
+    }
+}

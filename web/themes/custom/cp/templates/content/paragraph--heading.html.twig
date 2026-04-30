@@ -1,0 +1,8 @@
+{% set processed_title = content.field_heading_title['#items'].getString() %}
+{% set processed_subtitle = content.field_heading_subtitle['#items'].getString() %}
+
+{% embed 'cp:heading' with {
+title: processed_title,
+subtitle: processed_subtitle
+} %}
+{% endembed %}

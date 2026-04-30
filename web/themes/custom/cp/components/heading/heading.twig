@@ -1,0 +1,16 @@
+{% set heading_attributes = attributes ?? create_attribute() %}
+{% set heading_attributes = heading_attributes.addClass(['cp-heading']) %}
+
+<section {{ heading_attributes }}>
+    <div class="cp-heading__container">
+
+        {% if title %}
+        <h1 class="cp-heading__title">{{ title }}</h1>
+        {% endif %}
+
+        {% if subtitle %}
+        <p class="cp-heading__subtitle">{{ subtitle }}</p>
+        {% endif %}
+
+    </div>
+</section>
