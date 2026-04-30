@@ -1,0 +1,113 @@
+@import "../../src/scss/init";
+
+.cp-card {
+    //background-color: $color-light;
+    background-color: $color-secondary;
+    border-radius: 16px;
+    overflow: hidden;
+    padding: 2rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    margin: 40px auto;
+    max-width: 800px;
+    width: 100%;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    /* imagem */
+    &__image {
+        height: auto;
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 16px;
+            display: block;
+            aspect-ratio: 1/1;
+        }
+    }
+
+    /* conteúdo */
+    &__content {
+        flex: 1;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    &__title {
+        //@extend h1;
+        @extend .cp-subtitle;
+        @extend .cp-subtitle--lg;
+        //color: $color-primary;
+        color: $color-gray-soft;
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        margin-bottom: 1.5rem;
+        //color: $color-gray;
+        color: $color-light;
+    }
+
+    /* botão simples */
+    &__btn {
+        padding: 14px 28px;
+        font-weight: 500;
+        font-size: 15px;
+        background: $color-primary;
+        color: $color-light;
+        //background: $color-light;
+        //color: $color-primary;
+        border-radius: $border-radius-btn;
+        text-decoration: none;
+    }
+
+    /* LEFT = texto esquerda | imagem direita */
+    &--card-left {
+        .cp-card__content {
+            order: 1;
+        }
+
+        .cp-card__image {
+            order: 2;
+        }
+    }
+
+    /* RIGHT = imagem esquerda | texto direita */
+    &--card-right {
+        .cp-card__content {
+            order: 2;
+        }
+
+        .cp-card__image {
+            order: 1;
+        }
+    }
+
+    &--text-only {
+        grid-template-columns: 1fr;
+
+        .cp-card__image {
+            display: none;
+        }
+
+        .cp-card__content {
+            align-items: center;
+            text-align: center;
+        }
+    }
+
+    @media (max-width: 600px) {
+        &__inner {
+            flex-direction: column; // ← imagem e texto em coluna
+        }
+    }
+}

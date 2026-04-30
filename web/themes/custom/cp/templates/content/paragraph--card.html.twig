@@ -1,0 +1,19 @@
+{% set processed_title = content.field_card_title['#items'].getString() %}
+{% set processed_text = content.field_card_text %}
+{% set processed_style = content.field_card_style['#items'].getString() %}
+
+{% set media = content.field_card_image['#items'].entity %}
+{% set processed_image_url = media.field_media_image.entity.uri.value ? file_url(media.field_media_image.entity.uri.value) : null %}
+
+{% set processed_button_url = content.field_card_button[0]['#url'] %}
+{% set processed_button_text = content.field_card_button[0]['#title'] %}
+
+{% embed 'cp:card' with {
+  title: processed_title,
+  text: processed_text,
+  image_url: processed_image_url,
+  style: processed_style,
+  button_url: processed_button_url,
+  button_text: processed_button_text,
+} %}
+{% endembed %}

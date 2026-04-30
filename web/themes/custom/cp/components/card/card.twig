@@ -1,0 +1,34 @@
+{% set card_attributes = attributes ?? create_attribute() %}
+
+{% set card_attributes = card_attributes.addClass([
+  'cp-card',
+  style ? 'cp-card--' ~ style
+]) %}
+
+<article {{ card_attributes }}>
+
+  <div class="cp-card__content">
+    {% if title %}
+      <h3 class="cp-card__title">{{ title }}</h3>
+    {% endif %}
+
+    {% if text %}
+      <div class="cp-card__text">
+        {{ text }}
+      </div>
+    {% endif %}
+
+    {% if button_url %}
+      <a href="{{ button_url }}" class="cp-card__btn">
+        {{ button_text ?? 'Ver mais' }}
+      </a>
+    {% endif %}
+  </div>
+
+  {% if image_url %}
+    <div class="cp-card__image">
+      <img src="{{ image_url }}" alt="{{ title|e }}">
+    </div>
+  {% endif %}
+
+</article>
