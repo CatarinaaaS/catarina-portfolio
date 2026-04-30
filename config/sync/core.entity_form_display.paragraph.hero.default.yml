@@ -1,0 +1,53 @@
+uuid: bdfafb9e-6840-46ac-a506-a0479f1f84e3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.hero.field_hero_button
+    - field.field.paragraph.hero.field_hero_subtitle
+    - field.field.paragraph.hero.field_hero_text
+    - field.field.paragraph.hero.field_hero_title
+    - paragraphs.paragraphs_type.hero
+  module:
+    - link
+    - text
+id: paragraph.hero.default
+targetEntityType: paragraph
+bundle: hero
+mode: default
+content:
+  field_hero_button:
+    type: link_default
+    weight: 3
+    region: content
+    settings:
+      placeholder_url: ''
+      placeholder_title: ''
+    third_party_settings: {  }
+  field_hero_subtitle:
+    type: string_textfield
+    weight: 1
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_hero_text:
+    type: text_textarea
+    weight: 2
+    region: content
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+  field_hero_title:
+    type: string_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+hidden:
+  created: true
+  status: true

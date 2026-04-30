@@ -1,0 +1,19 @@
+uuid: 6fab54a4-893e-41b4-b99b-a12aaf2e3a54
+langcode: en
+status: true
+dependencies:
+  module:
+    - layout_paragraphs
+id: section
+label: Secção
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins:
+  layout_paragraphs:
+    enabled: true
+    available_layouts:
+      layout_onecol: 'One column'
+      layout_twocol_section: 'Two column'
+      layout_threecol_section: 'Three column'
+      layout_fourcol_section: 'Four column'

@@ -1,0 +1,10 @@
+uuid: 640c662c-d781-45c1-aab5-538f21b5db73
+langcode: en
+status: true
+dependencies: {  }
+id: card
+label: Cartão
+icon_uuid: null
+icon_default: null
+description: ''
+behavior_plugins: {  }

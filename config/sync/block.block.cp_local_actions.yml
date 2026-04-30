@@ -1,0 +1,20 @@
+uuid: ace82baa-7f9b-4d0e-a43e-9fba65cbe3b3
+langcode: en
+status: true
+dependencies:
+  theme:
+    - cp
+_core:
+  default_config_hash: EzjfmjLMKIoB8k9qmAE7ZmX1g-jQnYOO_16Xzn5CadU
+id: cp_local_actions
+theme: cp
+region: header
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

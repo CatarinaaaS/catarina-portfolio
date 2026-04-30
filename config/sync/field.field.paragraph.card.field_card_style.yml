@@ -1,0 +1,21 @@
+uuid: c696ecd3-95fc-43fe-874a-2153dfaae37b
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_card_style
+    - paragraphs.paragraphs_type.card
+  module:
+    - options
+id: paragraph.card.field_card_style
+field_name: field_card_style
+entity_type: paragraph
+bundle: card
+label: Estilo
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string

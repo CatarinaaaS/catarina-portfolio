@@ -1,0 +1,27 @@
+uuid: c88a4f6f-7aae-434d-b6bb-3c372e4800d8
+langcode: en
+status: true
+dependencies:
+  config:
+    - system.menu.main
+  module:
+    - system
+  theme:
+    - cp
+_core:
+  default_config_hash: QXnTFDMmlgotOiCuAbTppR_SztEGy3eDpDxeSM7IDkw
+id: cp_main_menu
+theme: cp
+region: navbar_left
+weight: -5
+provider: null
+plugin: 'system_menu_block:main'
+settings:
+  id: 'system_menu_block:main'
+  label: 'Main navigation'
+  label_display: '0'
+  provider: system
+  level: 1
+  depth: 2
+  expand_all_items: false
+visibility: {  }

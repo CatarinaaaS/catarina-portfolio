@@ -1,0 +1,22 @@
+uuid: dccc145e-c207-4f96-abd4-6c0948aa15c7
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cp
+_core:
+  default_config_hash: WayBXOPk2R97iG8QaSeBMKTNkaj1xm7-QkFC_weirDU
+id: cp_content
+theme: cp
+region: content
+weight: -5
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

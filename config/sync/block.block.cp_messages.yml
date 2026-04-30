@@ -1,0 +1,22 @@
+uuid: 7b37dc61-88fe-411c-b962-85465db7ea91
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - cp
+_core:
+  default_config_hash: huU9UDj-j3Kjjajy1ZK7AGdzAY5CMa_4Fii_ILrM9wg
+id: cp_messages
+theme: cp
+region: header
+weight: -3
+provider: null
+plugin: system_messages_block
+settings:
+  id: system_messages_block
+  label: 'Status messages'
+  label_display: '0'
+  provider: system
+visibility: {  }

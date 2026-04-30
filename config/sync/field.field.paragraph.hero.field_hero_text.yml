@@ -1,0 +1,22 @@
+uuid: 31ab6aeb-4c48-48ba-b582-62f309552998
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_hero_text
+    - paragraphs.paragraphs_type.hero
+  module:
+    - text
+id: paragraph.hero.field_hero_text
+field_name: field_hero_text
+entity_type: paragraph
+bundle: hero
+label: Texto
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  allowed_formats: {  }
+field_type: text_long

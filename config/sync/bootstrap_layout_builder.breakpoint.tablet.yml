@@ -1,0 +1,10 @@
+uuid: 0cf2e66b-d906-43d2-82cb-ff84ef4b92c6
+langcode: en
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: 96ZiDaMm48OUV0myM8JrBfkZXmvUfFzDsZ30EGzn_OU
+id: tablet
+label: Tablet
+base_class: col-md
+weight: -9
