@@ -1,0 +1,15 @@
+{% set processed_title = content.field_hero_title['#items'].getString() %}
+{% set processed_subtitle = content.field_hero_subtitle['#items'].getString() %}
+{% set processed_button_url = content.field_hero_button[0]['#url'] %}
+{% set processed_button_text = content.field_hero_button[0]['#title'] %}
+
+{% embed 'cp:hero' with {
+  title: processed_title,
+  subtitle: processed_subtitle,
+  button_url: processed_button_url,
+  button_text: processed_button_text,
+} %}
+  {% block hero_text %}
+    {{ content.field_hero_text }}
+  {% endblock %}
+{% endembed %}

@@ -1,0 +1,28 @@
+{% set block_hero_text %}{% block hero_text %}{% endblock %}{% endset %}
+
+{% set hero_attributes = attributes ?? create_attribute() %}
+{% set hero_attributes = hero_attributes.addClass(['cp-hero']) %}
+
+<section {{ hero_attributes }}>
+  <div class="cp-hero__container">
+    <div class="cp-hero__content">
+      {% if title %}
+        <h1 class="cp-hero__title">{{ title }}</h1>
+      {% endif %}
+
+      {% if subtitle %}
+        <p class="cp-hero__subtitle">{{ subtitle }}</p>
+      {% endif %}
+
+      {% if block_hero_text %}
+        <div class="cp-hero__text">{{ block_hero_text }}</div>
+      {% endif %}
+
+      {% if button_url %}
+        <a href="{{ button_url }}" class="cp-hero__btn">
+          {{ button_text ?? 'Ver mais' }}
+        </a>
+      {% endif %}
+    </div>
+  </div>
+</section>
