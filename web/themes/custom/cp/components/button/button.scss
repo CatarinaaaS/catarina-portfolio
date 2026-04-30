@@ -1,0 +1,46 @@
+@import "../../src/scss/init";
+
+.cp-button-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.cp-button {
+    display: inline-flex;
+    width: fit-content;
+
+    padding: 14px 28px;
+    border-radius: $border-radius-btn;
+
+    font-weight: 500;
+    font-size: 15px;
+    text-decoration: none;
+    transition: 0.2s ease;
+
+    &--btn-primary {
+        background: $color-primary;
+        color: $color-light;
+
+        transition: background 0.2s ease;
+
+        &:hover {
+            background: $color-secondary;
+            color: $color-light;
+        }
+    }
+
+    &--btn-secondary {
+        background: transparent;
+        border: 2px solid $color-primary;
+        color: $color-primary;
+
+        transition: background 0.2s ease;
+
+        &:hover {
+            background: $color-primary;
+            color: $color-light;
+        }
+    }
+}

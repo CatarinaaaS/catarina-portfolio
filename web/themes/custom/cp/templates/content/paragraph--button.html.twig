@@ -1,0 +1,10 @@
+{% set processed_button_url = content.field_button_text[0]['#url'] %}
+{% set processed_button_text = content.field_button_text[0]['#title'] %}
+{% set processed_button_style = content.field_button_style['#items'].getString() %}
+
+{% embed 'cp:button' with {
+  text: processed_button_text,
+  url: processed_button_url,
+  style: processed_button_style,
+} %}
+{% endembed %}

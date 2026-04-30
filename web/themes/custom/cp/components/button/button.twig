@@ -1,0 +1,12 @@
+{% set button_attributes = attributes ?? create_attribute() %}
+
+{% set button_attributes = button_attributes.addClass([
+  'cp-button',
+  style ? 'cp-button--' ~ style
+]) %}
+
+<div class="cp-button-wrapper">
+  <a href="{{ url }}" class="cp-button cp-button--{{ style }}">
+    {{ text }}
+  </a>
+</div>
