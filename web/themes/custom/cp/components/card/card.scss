@@ -9,7 +9,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 4rem;
-    margin: 40px auto;
+    margin: 80px auto;
     max-width: 800px;
     width: 100%;
 
@@ -68,6 +68,12 @@
         //color: $color-primary;
         border-radius: $border-radius-btn;
         text-decoration: none;
+        transition: background 0.2s ease;
+
+        &:hover {
+            background: $color-light;
+            color: $color-primary;
+        }
     }
 
     /* LEFT = texto esquerda | imagem direita */
@@ -107,7 +113,7 @@
 
     @media (max-width: 600px) {
         &__inner {
-            flex-direction: column; // ← imagem e texto em coluna
+            flex-direction: column;
         }
     }
 }
