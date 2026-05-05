@@ -1,0 +1,29 @@
+{% embed 'cp:navbar' with {
+navbar_theme: 'dark',
+navbar_utility_classes: [
+'justify-content-between',
+'cp-navbar',
+],
+} %}
+{% block branding %}
+{% if page.navbar_branding %}
+{{ page.navbar_branding }}
+{% endif %}
+{% endblock %}
+
+{% block left %}
+{% if page.navbar_left %}
+<div class="me-auto navbar-left">
+  {{ page.navbar_left }}
+</div>
+{% endif %}
+{% endblock %}
+
+{% block right %}
+{% if page.navbar_right %}
+<div class="ms-auto navbar-right">
+  {{ page.navbar_right }}
+</div>
+{% endif %}
+{% endblock %}
+{% endembed %}

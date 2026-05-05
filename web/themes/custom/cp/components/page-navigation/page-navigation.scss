@@ -1,0 +1,42 @@
+@import "../../src/scss/init";
+
+.cp-navbar {
+    background: $color-dark !important;
+    border-bottom: 2px solid $color-dark-soft;
+    padding: $space-md $space-xl;
+
+    .navbar-left {
+        .nav-link {
+            font-family: $font-script;
+            font-size: 1.3rem;
+            color: $color-secondary !important;
+            font-weight: $font-weight-light;
+            transition:
+                color 0.2s ease,
+                transform 0.2s ease;
+            display: inline-block;
+
+            &:hover {
+                color: $color-primary !important;
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    .navbar-right {
+        .nav-link {
+            font-family: $font-base;
+            color: $color-gray-soft !important;
+            font-size: 0.9rem;
+            transition:
+                color 0.2s ease,
+                transform 0.2s ease;
+            display: inline-block;
+
+            &:hover {
+                color: $color-gray-soft !important;
+                transform: scale(1.1);
+            }
+        }
+    }
+}
