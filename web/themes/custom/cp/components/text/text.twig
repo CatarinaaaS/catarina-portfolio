@@ -1,0 +1,14 @@
+{% set text_attributes = attributes ?? create_attribute() %}
+{% set text_attributes = text_attributes.addClass(['cp-text']) %}
+
+<section {{ text_attributes }}>
+    <div class="cp-text__container">
+
+        {% if body %}
+        <div class="cp-text__body">
+            {{ body }}
+        </div>
+        {% endif %}
+
+    </div>
+</section>

@@ -1,0 +1,32 @@
+@import "../../src/scss/init";
+
+.cp-text {
+    width: 100%;
+    padding: 2rem 0;
+
+    &__container {
+        max-width: 900px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    &__body {
+        color: $body-color;
+        font-size: 1rem;
+        line-height: 1.8;
+        text-align: center;
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        a {
+            color: $color-primary;
+            text-decoration: underline;
+
+            &:hover {
+                color: $color-secondary;
+            }
+        }
+    }
+}
