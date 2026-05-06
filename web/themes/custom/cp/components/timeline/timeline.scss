@@ -1,0 +1,92 @@
+@import "../../src/scss/init";
+
+.cp-timeline {
+    padding: $space-xxxl 0;
+
+    &__container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 0 $space-xl;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: calc($space-xl + 4px);
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background: $color-bg-time;
+        }
+    }
+
+    &__item {
+        position: relative;
+        padding-left: $space-xxl;
+        margin-bottom: $space-xxl;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__marker {
+        position: absolute;
+        left: 0;
+        top: 6px;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: $color-primary;
+        border: 2px solid $color-dark;
+    }
+
+    &__type {
+        display: inline-block;
+        font-size: 11px;
+        padding: 2px 10px;
+        border-radius: 20px;
+        margin-bottom: $space-xs;
+        text-transform: lowercase;
+        letter-spacing: 1px;
+    }
+
+    &__item--academic &__type {
+        background: $color-bg-time;
+        color: $color-primary;
+        border: 0.5px solid $color-primary;
+    }
+
+    &__item--professional &__type {
+        background: $color-bg-time;
+        color: $color-secondary;
+        border: 0.5px solid $color-secondary;
+    }
+
+    &__item--personal &__type {
+        background: $color-bg-time;
+        color: $color-dark-soft;
+        border: 0.5px solid $color-dark-soft;
+    }
+
+    &__year {
+        display: block;
+        font-size: 12px;
+        color: $color-primary;
+        letter-spacing: 2px;
+        margin-bottom: $space-xs;
+    }
+
+    &__title {
+        font-size: 1rem;
+        color: $color-light;
+        font-weight: 500;
+        margin-bottom: $space-xs;
+    }
+
+    &__text {
+        font-size: 0.9rem;
+        color: $color-gray-soft;
+        line-height: 1.7;
+    }
+}

@@ -1,0 +1,39 @@
+<section class="cp-timeline">
+    <div class="cp-timeline__container">
+
+        {% for item in items %}
+
+        <div class="cp-timeline__item cp-timeline__item--{{ item.type }}">
+
+            <div class="cp-timeline__marker"></div>
+
+            <div class="cp-timeline__content">
+
+                <!-- tipo (pessoal / profissional etc) -->
+                <span class="cp-timeline__type">
+                    {{ item.type }}
+                </span>
+
+                <!-- ano -->
+                <span class="cp-timeline__year">
+                    {{ item.year }}
+                </span>
+
+                <!-- título -->
+                <h3 class="cp-timeline__title">
+                    {{ item.title }}
+                </h3>
+
+                <!-- descrição -->
+                <div class="cp-timeline__text">
+                    {{ item.description }}
+                </div>
+
+            </div>
+
+        </div>
+
+        {% endfor %}
+
+    </div>
+</section>

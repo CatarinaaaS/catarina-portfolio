@@ -1,0 +1,19 @@
+{% set items = [] %}
+
+{% for key, item in content.field_timeline_items['#items'] %}
+
+{% set paragraph = content.field_timeline_items['#items'][key].entity %}
+
+{% set items = items|merge([{
+year: paragraph.field_timeline_data.value,
+title: paragraph.field_timeline_title.value,
+description: paragraph.field_timeline_description.processed,
+type: paragraph.field_timeline_type.value|replace({'timeline-': ''})
+}]) %}
+
+{% endfor %}
+
+{% embed 'cp:timeline' with {
+items: items
+} %}
+{% endembed %}
