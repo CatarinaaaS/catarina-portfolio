@@ -9,3 +9,6 @@ web/sites/default/settings.local.php
 web/sites/default/*.local.php
 *.log
 .env
+web/themes/custom/cp/mix-manifest.json
+web/themes/custom/cp/components/**/*.css
+web/themes/custom/cp/components/**/*.css.map
